@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/getLocationFragment">
+
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.ali.weatherapp.ui.weather.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather">
+        <action
+            android:id="@+id/action_weatherFragment_to_searchCityFragment"
+            app:destination="@id/searchCityFragment" />
+        <argument
+            android:name="cityName"
+            app:argType="string" />
+        <argument
+            android:name="locationData"
+            app:argType="com.ali.weatherapp.data.model.LocationData" />
+        <action
+            android:id="@+id/action_weatherFragment_to_getLocationFragment"
+            app:destination="@id/getLocationFragment"
+            app:popUpTo="@id/getLocationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchCityFragment"
+        android:name="com.ali.weatherapp.ui.search.SearchCityFragment"
+        android:label="fragment_search_city">
+        <action
+            android:id="@+id/action_searchCityFragment_to_weatherFragment"
+            app:destination="@id/weatherFragment"
+            app:popUpTo="@id/weatherFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/getLocationFragment"
+        android:name="com.ali.weatherapp.ui.location.LocationFragment"
+        android:label="fragment_get_location"
+        tools:layout="@layout/fragment_location">
+        <argument
+            android:name="refresh location"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_getLocationFragment_to_weatherFragment"
+            app:destination="@id/weatherFragment" />
+    </fragment>
+</navigation>
