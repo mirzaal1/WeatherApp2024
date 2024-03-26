@@ -1,7 +1,7 @@
 package com.ali.weatherapp.di
 
 import com.ali.weatherapp.data.service.WeatherApi
-import com.ali.weatherapp.remote.request.WeatherRepository
+import com.ali.weatherapp.data.remote.request.WeatherRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,6 +1,6 @@
 package com.ali.weatherapp.data.model
 
-import com.ali.weatherapp.remote.response.WeatherEntity
+import com.ali.weatherapp.data.remote.response.WeatherEntity
 
 data class WeatherModel(
     val weatherData: WeatherData,

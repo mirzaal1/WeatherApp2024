@@ -1,4 +1,4 @@
-package com.ali.weatherapp.remote.response
+package com.ali.weatherapp.data.remote.response
 
 import com.ali.weatherapp.data.model.WeatherModel
 import com.google.gson.annotations.SerializedName

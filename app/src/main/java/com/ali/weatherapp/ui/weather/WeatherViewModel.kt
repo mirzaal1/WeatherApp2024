@@ -7,8 +7,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ali.weatherapp.data.model.LocationData
 import com.ali.weatherapp.data.model.WeatherModel
-import com.ali.weatherapp.remote.request.StatusCode
-import com.ali.weatherapp.remote.request.WeatherRepository
+import com.ali.weatherapp.data.remote.request.StatusCode
+import com.ali.weatherapp.data.remote.request.WeatherRepository
 import com.ali.weatherapp.utils.Constants
 import com.ali.weatherapp.utils.Status
 import dagger.hilt.android.lifecycle.HiltViewModel

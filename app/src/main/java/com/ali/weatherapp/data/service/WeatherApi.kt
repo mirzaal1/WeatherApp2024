@@ -1,6 +1,6 @@
 package com.ali.weatherapp.data.service
 
-import com.ali.weatherapp.remote.response.WeatherEntity
+import com.ali.weatherapp.data.remote.response.WeatherEntity
 import com.ali.weatherapp.utils.Constants
 import retrofit2.Response
 import retrofit2.http.GET

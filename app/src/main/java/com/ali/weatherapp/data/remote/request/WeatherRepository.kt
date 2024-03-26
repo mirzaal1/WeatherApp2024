@@ -1,4 +1,4 @@
-package com.ali.weatherapp.remote.request
+package com.ali.weatherapp.data.remote.request
 
 import com.ali.weatherapp.data.model.LocationData
 import com.ali.weatherapp.data.model.WeatherModel
